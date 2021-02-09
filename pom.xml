@@ -11,7 +11,7 @@
 
     <groupId>com.obit</groupId>
     <artifactId>g-analyzer</artifactId>
-    <version>0.1.0-RELEASE</version>
+    <version>0.1.1-RELEASE</version>
     <name>g-analyzer</name>
     <description>Read gforce records from arduino and write them to file</description>
 
@@ -24,7 +24,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -46,8 +45,6 @@
             <version>5.2</version>
         </dependency>
 
-
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -59,8 +56,6 @@
             <version>2.28.2</version>
             <scope>test</scope>
         </dependency>
-
-
     </dependencies>
 
     <build>
@@ -79,13 +74,12 @@
             </plugin>
         </plugins>
     </build>
-        
-   <distributionManagement>
-    <repository>
-      <id>github</id>
-      <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/onulo/g-analyzer</url>
-    </repository>
-  </distributionManagement>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/onulo/g-analyzer</url>
+        </repository>
+    </distributionManagement>
 </project>

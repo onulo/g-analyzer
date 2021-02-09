@@ -1,6 +1,6 @@
-java -jar -Dfile.size=50 -Dport.baudRate=112500 -Dmessages.strictMode=true  g-analyzer-0.0.1-SNAPSHOT.jar
+java -jar -Dfile.size=50 -Dport.baudRate=112500 -Dmessages.strictMode=true -Dfile.name=C:\\ARDUINO\\out.csv  g-analyzer-[latest].jar
 
-
+https://github.com/onulo/g-analyzer/packages/
 
 
 

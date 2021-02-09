@@ -1,6 +1,5 @@
 package com.obit.ganalyzer.service;
 
-import com.obit.ganalyzer.model.GForce;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import java.io.IOException;
