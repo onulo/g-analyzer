@@ -25,3 +25,5 @@ For basic setup you will need ARDUINO with accelerometer connected to PC via USB
 ```
 
 ![Maven Package](https://github.com/onulo/g-analyzer/workflows/Maven%20Package/badge.svg)
+
+[![GitHub Release](https://img.shields.io/github/release/onulo/g-analyzer?style=flat)]()  
