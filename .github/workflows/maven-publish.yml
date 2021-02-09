@@ -5,6 +5,9 @@ name: Maven Package
 
 on:
   workflow_dispatch:
+  create:
+    tags: 
+      - '*'
 
 jobs:
   build:
