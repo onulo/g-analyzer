@@ -1,12 +1,12 @@
 name: "tagged-release"
 
-on: 
-  workflow_dispatch:
+# on: 
+#   workflow_dispatch:
 
-# on:
-#   push:
-#     tags:
-#       - "*"
+on:
+  push:
+    tags:
+      - "*"
 
 jobs:
   tagged-release:
