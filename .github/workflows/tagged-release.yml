@@ -12,9 +12,8 @@ jobs:
 
     steps:
       # ...
-      - name: "Build & test"
-        run: |
-          echo "done!"
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
