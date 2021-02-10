@@ -1,4 +1,4 @@
-# G-Analyzer
+# G-Analyzer ![Latest Release](https://img.shields.io/github/v/release/onulo/g-analyzer?label=latest%20release)
 
 
 G-Analyzer is a project intended to reading g-force data using ARDUINO and accelerometer and record those data to csv file for further analysis.
@@ -25,4 +25,3 @@ For basic setup you will need ARDUINO with accelerometer connected to PC via USB
 ```
 
 ![Maven Package](https://github.com/onulo/g-analyzer/workflows/Maven%20Package/badge.svg)
-
