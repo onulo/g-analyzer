@@ -30,8 +30,8 @@ jobs:
           # ...
         
       - name: "Build & test"
-        run: |
-          echo "done!"
+        run: mvn -B package --file pom.xml
+          
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
