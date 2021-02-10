@@ -15,7 +15,7 @@ For basic setup you will need ARDUINO with accelerometer connected to PC via USB
 * Upload [source code](arduino/accelerometer-v1/accelerometer-v1.ino) to ARDUINO using Arduino IDE
 
 ### PC
-* Download the latest version of [jar file](https://github.com/onulo/g-analyzer/packages) of g-analyzer
+* Download the latest version of [jar file](https://github.com/onulo/g-analyzer/releases) of g-analyzer
 
 ## Usage
  Connect ARDUINO to pc and run g-analyzer with command:

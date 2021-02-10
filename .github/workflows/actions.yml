@@ -1,4 +1,4 @@
-name: "tagged-release"
+name: "tagged-release-jar-included"
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   tagged-release:
-    name: "Tagged Release"
+    name: "Tagged Release .jar Included"
     runs-on: "ubuntu-latest"
 
     steps:
@@ -29,8 +29,8 @@ jobs:
           files: |
             target/*.jar
 
-      - uses: AButler/upload-release-assets@v2.0
-        with:
-          files: 'target/*.jar'
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish to GitHub Packages Apache Maven
+        run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
