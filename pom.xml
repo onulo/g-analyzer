@@ -11,7 +11,7 @@
 
     <groupId>com.obit</groupId>
     <artifactId>g-analyzer</artifactId>
-    <version>1.0.11</version>
+    <version>1.0.12</version>
     <name>g-analyzer</name>
     <description>Read gforce records from arduino and write them to file</description>
 
