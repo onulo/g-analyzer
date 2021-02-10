@@ -1,12 +1,12 @@
 name: "tagged-release"
 
-# on: 
-#   workflow_dispatch:
+on: 
+  workflow_dispatch:
 
-on:
-  push:
-    tags:
-      - "*"
+# on:
+#   push:
+#     tags:
+#       - "*"
 
 jobs:
   tagged-release:
@@ -23,16 +23,14 @@ jobs:
           settings-path: ${{ github.workspace }} # location for the settings.xml file
         
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn install
         
       - name: Publish to GitHub Packages Apache Maven
         run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
         env:
           GITHUB_TOKEN: ${{ github.token }}
           
-          # ...
-        
-    
+           
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
