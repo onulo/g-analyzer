@@ -1,8 +1,5 @@
 package com.obit.ganalyzer.service;
 
-import com.opencsv.exceptions.CsvDataTypeMismatchException;
-import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Getter;
@@ -29,19 +26,9 @@ public class RecordCollector {
             collection.add(record);
             return false;
         } else {
-            try {
-                csvFileWriter.writeToFile(collection);
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (CsvDataTypeMismatchException e) {
-                e.printStackTrace();
-            } catch (CsvRequiredFieldEmptyException e) {
-                e.printStackTrace();
-            }
-            log.info("Succesfully writed {} records to file", collection.size());
+            csvFileWriter.writeToFile(collection);
+            log.info("Successfully written {} records to file", collection.size());
             return true;
         }
-
     }
-
 }

@@ -29,10 +29,9 @@ public class MessageParser {
     private void validateMessage(List<String> strings) {
         if(strictMode) {
             if (strings.stream().anyMatch(str -> !NumberUtils.isCreatable(str))) {
-                log.error("Message {} can not be represent as a numeric value. You can skip this by disable strictMode", strings);
-                System.exit(1);
+                throw new NoReadableDataException(
+                        String.format("Message %s can not be represent as a numeric value. You can skip this by disable strictMode", strings));
             }
-
         }
     }
 
@@ -42,8 +41,7 @@ public class MessageParser {
             throw new NoReadableDataException("Received data byte[] is null or empty!");
         }
         final byte[] removedDelimiter = removeDelimiter(newData);
-        final String message = new String(removedDelimiter, StandardCharsets.UTF_8);
-        return message;
+        return new String(removedDelimiter, StandardCharsets.UTF_8);
     }
 
     private static byte[] removeDelimiter(byte[] newData) {
