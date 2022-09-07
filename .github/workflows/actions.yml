@@ -35,6 +35,7 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           title: ${{ steps.project.outputs.version }}
+          automatic_release_tag: ${{ steps.project.outputs.version }}
           files: |
             target/*.jar
 
