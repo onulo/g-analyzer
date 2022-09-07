@@ -2,8 +2,8 @@ name: "tagged-release-jar-included"
 
 on:
   push:
-    tags:
-      - "*"
+    #tags:
+   # - "*"
   workflow_dispatch:
 
 jobs:
