@@ -9,7 +9,10 @@ G-Analyzer is a project intended to reading g-force data using ARDUINO and accel
 
 For basic setup you will need ARDUINO with accelerometer connected to PC via USB cable.
 
-**accelerometer** --> **arduino**  --> **pc with g-analyzer**
+```mermaid
+flowchart LR
+accelerometer --> arduino  --> pc[pc with g-analyzer]
+```
 
 ## Installation
 
